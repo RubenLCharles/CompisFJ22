@@ -1,2 +1,2 @@
 # CompisFJ22
-Proyecto de Compiladores para la Universidad
+Proyecto de Compiladores para clase
