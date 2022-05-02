@@ -6,37 +6,44 @@ tokens = [
     #operadores aritmeticos
     'PLUS_OP','MINUS_OP','MULT_OP','DIV_OP',
     #operadores logicos
-    'EQUAL_LOG','LT_LOG','LTE_LOG','GT_LOG',
-    'GTE_LOG','NE_LOG','OR_LOG','AND_LOG',
+    'EQUAL_LOG','LT_LOG','GT_LOG','NE_LOG',
+    'OR_LOG','AND_LOG',
     #simbolos para conjuntos y scope
     'LPAREN','RPAREN','LBRACK','RBRACK','LCURLY','RCURLY',
     #operadores especiales
     'COMMA','SEMIC','COLON',
     #constantes
-    'FLOAT_CTE','INT_CTE','CHAR_CTE','STRING_CTE',
+    'FLOAT_CTE','INT_CTE','CHAR_CTE', 'STRING_CTE',
     'NEW_LINE','ID','COMMENT'
 ]
 
 #palabras reservadas
 keywords = {
-    'programa' : 'PROGRAMA',
+    'program' : 'PROGRAM',
     'void' : 'VOID',
-    'principal' : 'PRINCIPAL',
-    'escribe' : 'ESCRIBE',
-    'lee' : 'LEE',
-    'regresa' : 'REGRESA',
-    'si' : 'SI',
-    'entonces' : 'ENTONCES',
-    'sino' : 'SINO',
-    'mientras' : 'MIENTRAS',
-    'variables' :'VARIABLES',
-    'funcion' : 'FUNCION',
-    'hacer' : 'HACER', 
-    'desde' : 'DESDE', 
-    'hasta' : 'HASTA',    
+    'main' : 'MAIN',
+    'while' : 'WHILE',
+    'read' : 'READ',
+    'return' : 'RETURN',
+    'if' : 'IF',
+    'then' : 'THEN',
+    'else' : 'ELSE',
+    'vars' :'VARS',
+    'function' : 'FUNCTION', 
+    'while' : 'WHILE',
+    'do' : 'DO', 
+    'for' : 'FOR',
+    'to' : 'TO', 
+    'point' : 'POINT',
+    'line' : 'LINE',
+    'arc' : 'ARC',
+    'penup' : 'PENUP',
+    'pendown' : 'PENDOWN',
+    'circle' : 'CIRCLE',
+    'size' : 'SIZE',  
     #tipos de datos
-    'entero' : 'INT_TYPE',
-    'flotante' : 'FLOAT_TYPE',
+    'int' : 'INT_TYPE',
+    'float' : 'FLOAT_TYPE',
     'char' : 'CHAR_TYPE'
 
 }
@@ -54,7 +61,7 @@ t_LT_LOG = r'\<'
 t_LTE_LOG = r'\<\='
 t_GT_LOG = r'\>'
 t_GTE_LOG = r'\>\='
-t_NE_LOG = r'\!\='
+t_NE_LOG = r'\<\>'
 t_OR_LOG = r'\|'
 t_AND_LOG = r'\&'
 t_LPAREN = r'\('
